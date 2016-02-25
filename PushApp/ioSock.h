@@ -53,6 +53,7 @@
 #include <Security/SecureTransport.h>
 #include <sys/types.h>
 
+#define ioErr -36
 #ifdef	__cplusplus
 extern "C" {
 #endif

@@ -58,7 +58,7 @@
 #include <arpa/inet.h>
 #include <fcntl.h>
 
-#include <CoreServices/../Frameworks/CarbonCore.framework/Headers/MacErrors.h>
+//#include <CoreServices/../Frameworks/CarbonCore.framework/Headers/MacErrors.h>
 #include <time.h>
 #include <strings.h>
 
@@ -264,7 +264,7 @@ OSStatus ListenForClients(
     }
     if (listen(sock, 1)) {
 		perror("listen");
-		return ioErr;
+		return noErr;
     }
 	*socketNo = (otSocket)sock;
     return noErr;
